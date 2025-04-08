@@ -57,6 +57,10 @@
 
     <script>
   //    document.body.style.transform = `rotate(90deg)`;
+      function randomNumber(min,max){
+        return (Math.random() * (max-min)) + min;
+
+      }
       let rotation = 0;
       document.addEventListener("click", function () {
         let min = 10;
