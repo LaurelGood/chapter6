@@ -9,11 +9,11 @@
 		width: 100%;
 		height: 100%;
 	  } 
-	  body {
-        margin: 1rem;
+	    body {
+        margin: 15% 4rem 0 4rem;
         background-color: black;
-		background: url("assets/img/flames.gif") no-repeat
-		center/cover;
+		    background: url("assets/img/flames.gif") no-repeat
+		    center/cover;
         color: whitesmoke;
         font-size: 5rem;
         overflow: hidden;
@@ -21,13 +21,13 @@
       .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-		grid-template-columns: repeat(auto-fit, minimac(320px, 1fr));
+		    grid-template-columns: repeat(auto-fit, minimac(320px, 1fr));
         gap: 2rem;
       }
       .last {
         padding-bottom: 2rem;
         border-bottom: 2px solid rgb(220, 200, 180);
-		margin: 15% 4rem 0 4rem;
+		    margin: 15% 4rem 0 4rem;
 	}
     </style>
   </head>
@@ -49,6 +49,10 @@
    
    
 
-    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/main.js">
+      doucument.body.style.opacity = .5;
+
+    </script>
+  
   </body>
 </html>
