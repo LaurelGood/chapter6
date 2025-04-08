@@ -28,7 +28,13 @@
         padding-bottom: 2rem;
         border-bottom: 2px solid rgb(220, 200, 180);
 		    margin: 15% 4rem 0 4rem;
-	}
+	    }
+      body {
+        transition-property: transform;
+        transition-duration: 3s;
+      }
+    
+    
     </style>
   </head>
   <body>
@@ -50,8 +56,14 @@
    
 
     <script>
-      document.body.style.transform = `rotate(90deg)`;
-
+  //    document.body.style.transform = `rotate(90deg)`;
+      let rotate = 0;
+      document.addEventListener("click", function () {
+        let min = 10;
+        let max = 40;
+        rotation += Math.random() * (max - min) + min;
+        document.body.style.transform = `rotate(${rotation}deg)`;
+    });
     </script>
   
   </body>
